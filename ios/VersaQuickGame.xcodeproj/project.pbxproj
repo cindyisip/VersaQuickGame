@@ -1,0 +1,57 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		70C0C66CE7A9FA4708AD6B80 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Core/Models.swift"; sourceTree = "<group>"; };
+		52CA746A480E1BDB0EBA92D7 = { isa = PBXBuildFile; fileRef = 70C0C66CE7A9FA4708AD6B80; };
+		739A8B077DDC2A4C37118115 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Services/AppStore.swift"; sourceTree = "<group>"; };
+		04349C2C0A632E03DE5F034E = { isa = PBXBuildFile; fileRef = 739A8B077DDC2A4C37118115; };
+		EA593F7E35AF98191DF7CAEC = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Services/DemoGameService.swift"; sourceTree = "<group>"; };
+		3B7F37CA2087D69BB2E49922 = { isa = PBXBuildFile; fileRef = EA593F7E35AF98191DF7CAEC; };
+		546671485F15936DC258C295 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Services/GameService.swift"; sourceTree = "<group>"; };
+		C07CEE9D73FB6B2F2CA84467 = { isa = PBXBuildFile; fileRef = 546671485F15936DC258C295; };
+		37A7862AEF1070AA53984FBB = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Services/SupabaseGameService.swift"; sourceTree = "<group>"; };
+		973149384CB9C5D1FF82D0FA = { isa = PBXBuildFile; fileRef = 37A7862AEF1070AA53984FBB; };
+		0A234D4FFA59C12328FBDCA9 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/VersaQuickGameApp.swift"; sourceTree = "<group>"; };
+		99DC9AB31B5DE428705D4CD1 = { isa = PBXBuildFile; fileRef = 0A234D4FFA59C12328FBDCA9; };
+		33BD9D9C92C66928C236D058 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Views/AccountViews.swift"; sourceTree = "<group>"; };
+		12CEB22E7692B5BEAB6AAB9E = { isa = PBXBuildFile; fileRef = 33BD9D9C92C66928C236D058; };
+		3B2C45C9C2F75A126CA2EA69 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Views/GameDetailView.swift"; sourceTree = "<group>"; };
+		E7C221BA63C514EA89F31164 = { isa = PBXBuildFile; fileRef = 3B2C45C9C2F75A126CA2EA69; };
+		61D8EA7D5B7E9901B6C1D000 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Views/GroupsView.swift"; sourceTree = "<group>"; };
+		56CFAE976A17023451FC7A20 = { isa = PBXBuildFile; fileRef = 61D8EA7D5B7E9901B6C1D000; };
+		70F593E213E8B7633A329F30 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Views/HistorySummaryViews.swift"; sourceTree = "<group>"; };
+		778C0C3C531BAFDD4A87A0A5 = { isa = PBXBuildFile; fileRef = 70F593E213E8B7633A329F30; };
+		CDA97B35309D865A15EF0C7A = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Views/InviteJoinView.swift"; sourceTree = "<group>"; };
+		5DB47C565AB8D3D66C2E70F2 = { isa = PBXBuildFile; fileRef = CDA97B35309D865A15EF0C7A; };
+		B3B2FCB8FE2DE53501CF80C0 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Views/PlayView.swift"; sourceTree = "<group>"; };
+		2B51D53084A02F731CBDDDC4 = { isa = PBXBuildFile; fileRef = B3B2FCB8FE2DE53501CF80C0; };
+		64F6A2F68B1D615B35201359 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersaQuickGame/Views/Theme.swift"; sourceTree = "<group>"; };
+		A549F33BD62640CDCE5DD33A = { isa = PBXBuildFile; fileRef = 64F6A2F68B1D615B35201359; };
+		D67382B3CC75D854EBDF8B94 = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "VersaQuickGame/Assets.xcassets"; sourceTree = "<group>"; };
+		0F77870FE29C8D01D4386455 = { isa = PBXBuildFile; fileRef = D67382B3CC75D854EBDF8B94; };
+		DAC4A2D8ECF31D1475B2724C = { isa = PBXFileReference; lastKnownFileType = text.xml; path = "VersaQuickGame/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		2EC1EC76FB147C9C96D4261B = { isa = PBXBuildFile; fileRef = DAC4A2D8ECF31D1475B2724C; };
+		E01A37539DD44DE20F00A582 = { isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Base.xcconfig; sourceTree = "<group>"; };
+		38A007151ABE87CC01A5B6E9 = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VersaQuickGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDC4F23F93125BBEEAE800C = { isa = PBXGroup; children = (38A007151ABE87CC01A5B6E9,); name = Products; sourceTree = "<group>"; };
+		B28B7AF69320201D1CF206EB = { isa = PBXGroup; children = (70C0C66CE7A9FA4708AD6B80,739A8B077DDC2A4C37118115,EA593F7E35AF98191DF7CAEC,546671485F15936DC258C295,37A7862AEF1070AA53984FBB,0A234D4FFA59C12328FBDCA9,33BD9D9C92C66928C236D058,3B2C45C9C2F75A126CA2EA69,61D8EA7D5B7E9901B6C1D000,70F593E213E8B7633A329F30,CDA97B35309D865A15EF0C7A,B3B2FCB8FE2DE53501CF80C0,64F6A2F68B1D615B35201359,D67382B3CC75D854EBDF8B94,DAC4A2D8ECF31D1475B2724C,E01A37539DD44DE20F00A582,FBDC4F23F93125BBEEAE800C,); sourceTree = "<group>"; };
+		D69C3AEDFA58492604D62FDB = { isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/supabase/supabase-swift.git"; requirement = {kind = exactVersion; version = 2.55.2;}; };
+		07B77CDFEF533CD5BDEBB41F = { isa = XCSwiftPackageProductDependency; package = D69C3AEDFA58492604D62FDB; productName = Supabase; };
+		39BD2C05747063F66D7EE579 = { isa = PBXBuildFile; productRef = 07B77CDFEF533CD5BDEBB41F; };
+		BCE16DD0260827ECF338C787 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (52CA746A480E1BDB0EBA92D7,04349C2C0A632E03DE5F034E,3B7F37CA2087D69BB2E49922,C07CEE9D73FB6B2F2CA84467,973149384CB9C5D1FF82D0FA,99DC9AB31B5DE428705D4CD1,12CEB22E7692B5BEAB6AAB9E,E7C221BA63C514EA89F31164,56CFAE976A17023451FC7A20,778C0C3C531BAFDD4A87A0A5,5DB47C565AB8D3D66C2E70F2,2B51D53084A02F731CBDDDC4,A549F33BD62640CDCE5DD33A,); runOnlyForDeploymentPostprocessing = 0; };
+		0189424A5A60FED329FA868E = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (0F77870FE29C8D01D4386455,2EC1EC76FB147C9C96D4261B,); runOnlyForDeploymentPostprocessing = 0; };
+		7561BFB015D8F536760CB671 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (39BD2C05747063F66D7EE579,); runOnlyForDeploymentPostprocessing = 0; };
+		4D8F54E7CBAF670D9F6C230D = { isa = XCBuildConfiguration; baseConfigurationReference = E01A37539DD44DE20F00A582; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; CODE_SIGN_ENTITLEMENTS = "VersaQuickGame/VersaQuickGame.entitlements"; CODE_SIGN_STYLE = "Automatic"; CURRENT_PROJECT_VERSION = "1"; GENERATE_INFOPLIST_FILE = "NO"; INFOPLIST_FILE = "VersaQuickGame/Info.plist"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; MARKETING_VERSION = "0.1.0"; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = "5.0"; TARGETED_DEVICE_FAMILY = "1"; SDKROOT = "iphoneos"; SWIFT_EMIT_LOC_STRINGS = "YES"; ENABLE_USER_SCRIPT_SANDBOXING = "YES"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG"; }; name = Debug; };
+		ED8772ADEC3A6C25161BC957 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; }; name = Debug; };
+		1A6EFC2CD0AF63DD14BE0438 = { isa = XCBuildConfiguration; baseConfigurationReference = E01A37539DD44DE20F00A582; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; CODE_SIGN_ENTITLEMENTS = "VersaQuickGame/VersaQuickGame.entitlements"; CODE_SIGN_STYLE = "Automatic"; CURRENT_PROJECT_VERSION = "1"; GENERATE_INFOPLIST_FILE = "NO"; INFOPLIST_FILE = "VersaQuickGame/Info.plist"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; MARKETING_VERSION = "0.1.0"; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = "5.0"; TARGETED_DEVICE_FAMILY = "1"; SDKROOT = "iphoneos"; SWIFT_EMIT_LOC_STRINGS = "YES"; ENABLE_USER_SCRIPT_SANDBOXING = "YES"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_OPTIMIZATION_LEVEL = "-O"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; }; name = Release; };
+		00F209874A1F7309F6DCEAA7 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; }; name = Release; };
+		7DE97F2CECB2601227982F09 = { isa = XCConfigurationList; buildConfigurations = (4D8F54E7CBAF670D9F6C230D,1A6EFC2CD0AF63DD14BE0438,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		6650A2B5E24FA7522CE6B81C = { isa = XCConfigurationList; buildConfigurations = (ED8772ADEC3A6C25161BC957,00F209874A1F7309F6DCEAA7,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		0E8A3AD980EC179856012B7E = { isa = PBXNativeTarget; buildConfigurationList = 7DE97F2CECB2601227982F09; buildPhases = (BCE16DD0260827ECF338C787,7561BFB015D8F536760CB671,0189424A5A60FED329FA868E,); buildRules = (); dependencies = (); name = VersaQuickGame; packageProductDependencies = (07B77CDFEF533CD5BDEBB41F,); productName = VersaQuickGame; productReference = 38A007151ABE87CC01A5B6E9; productType = "com.apple.product-type.application"; };
+		98F54143AB4E86B28C3AFEE0 = { isa = PBXProject; attributes = { LastUpgradeCheck = 1630; TargetAttributes = { 0E8A3AD980EC179856012B7E = { CreatedOnToolsVersion = 16.3; }; }; }; buildConfigurationList = 6650A2B5E24FA7522CE6B81C; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en,Base,); mainGroup = B28B7AF69320201D1CF206EB; packageReferences = (D69C3AEDFA58492604D62FDB,); productRefGroup = FBDC4F23F93125BBEEAE800C; projectDirPath = ""; projectRoot = ""; targets = (0E8A3AD980EC179856012B7E,); };
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0;
+}

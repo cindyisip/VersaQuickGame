@@ -1,0 +1,23 @@
+name: Check Quick Game
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  backend-and-web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+  ios:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test --package-path ios
+      - run: xcodebuild -project ios/VersaQuickGame.xcodeproj -scheme VersaQuickGame -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build

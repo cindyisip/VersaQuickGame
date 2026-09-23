@@ -1,0 +1,20 @@
+{
+  "name": "@versa-quick-game/invitations",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "dev:demo": "vite --host 0.0.0.0 --mode demo",
+    "build": "tsc --noEmit && node scripts/association.mjs && vite build",
+    "build:demo": "tsc --noEmit && vite build --mode demo",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.117.0"
+  }
+}

@@ -1,0 +1,317 @@
+[
+  {
+    "path": ".github/workflows/check.yml",
+    "bytes": 689,
+    "sha256": "aa51029505ac01340a69864e4d628833a6d5a1476e1577e3dd6001912a5b0217"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 216,
+    "sha256": "94d68f874cc43bbe4b33cdd39409ccf9ad889a07067b301245165b945e9cf277"
+  },
+  {
+    "path": "README.md",
+    "bytes": 616,
+    "sha256": "d34d7a9d99047b5dc6ed03fa1b79a8f804d2b523cda09754c11bb3869f1327c8"
+  },
+  {
+    "path": "SETUP-CHECKLIST.md",
+    "bytes": 14416,
+    "sha256": "4391e38b6cd58245585c637bb8bd2785770ea93e05ad3cf00c4eb5de501f8190"
+  },
+  {
+    "path": "START-HERE.md",
+    "bytes": 6158,
+    "sha256": "cca5266f096813c6d5812121820d113ed5afa717a7d197a62c7c74822845fa24"
+  },
+  {
+    "path": "backend/email-templates/sign-in-code.html",
+    "bytes": 660,
+    "sha256": "1c881a153a1acd074b858a1d20befe85bd1cac6f974d54d4da80116e4dc86133"
+  },
+  {
+    "path": "backend/migrations/202609230001_initial.sql",
+    "bytes": 25490,
+    "sha256": "73a21343f23e8f55ccc7387dfcc099bde41671075e643be584da3611b145c209"
+  },
+  {
+    "path": "backend/migrations/202609230002_opponent_periods.sql",
+    "bytes": 1534,
+    "sha256": "692f25917a15604b5c1a8c560635822e7dec98c433d37a5246e03328510bd737"
+  },
+  {
+    "path": "backend/migrations/202609230003_teammate_periods.sql",
+    "bytes": 1634,
+    "sha256": "816faf3ccb2b6f9a4beef8b4eafcbf0adf16b6c320ade634e76b33a253daaff9"
+  },
+  {
+    "path": "backend/tests/database.test.mjs",
+    "bytes": 11441,
+    "sha256": "bb48e3fa97f206002bcc0a0ba99a3e588564d911a02f929be54e59713c23e02d"
+  },
+  {
+    "path": "brand/README.md",
+    "bytes": 1446,
+    "sha256": "8589566114a7c1eec75e75ed86268bee4287374cecac3496dfd42c376d089ccd"
+  },
+  {
+    "path": "brand/versa-quick-game-icon-1024.png",
+    "bytes": 720105,
+    "sha256": "8f5f8cb53c7ae1a3a4c342b361314d221adb5ecf21ad6dcc53bd598ba03c9e09"
+  },
+  {
+    "path": "brand/versa-quick-game-master.png",
+    "bytes": 996597,
+    "sha256": "9a1abbe9c2748c4877c68a4fbdc3c3532a3cac4242522897e8bc5811ced41250"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "bytes": 7331,
+    "sha256": "8d79d1e1f7be67097d4b5f86947d71e553d407cbd5328ba644402e585cdc8a65"
+  },
+  {
+    "path": "docs/PRIVACY-RELEASE.md",
+    "bytes": 4843,
+    "sha256": "b54e3437a42fcba943539e0f2ab415d79f50a921a887d768276662a580b71e16"
+  },
+  {
+    "path": "docs/VALIDATION.md",
+    "bytes": 4024,
+    "sha256": "8467f5cecf41f9857986ec53187c432611e9d2ec3667449b3d712c9040844464"
+  },
+  {
+    "path": "ios/Config/Base.xcconfig",
+    "bytes": 393,
+    "sha256": "85022421875bbdf201e28ad5c5d857c50bd64291278576b7c8e3d7c2bdae64e2"
+  },
+  {
+    "path": "ios/Config/Local.example.xcconfig",
+    "bytes": 450,
+    "sha256": "c944232aa782ff10799b2fb37fc282096687dc8d6db55b1badf95212aac9018b"
+  },
+  {
+    "path": "ios/Package.swift",
+    "bytes": 394,
+    "sha256": "0ee360cc3fec8904f45b643597d6bb52a8db7dcdeb53da7377a568df74e38eda"
+  },
+  {
+    "path": "ios/Tests/GameRulesTests.swift",
+    "bytes": 4350,
+    "sha256": "09c3c0a5f26eadc476ef61927f3b9a05fec56c4ff829aa09dfbf3aace025c7a3"
+  },
+  {
+    "path": "ios/VersaQuickGame/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+    "bytes": 720105,
+    "sha256": "8f5f8cb53c7ae1a3a4c342b361314d221adb5ecf21ad6dcc53bd598ba03c9e09"
+  },
+  {
+    "path": "ios/VersaQuickGame/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "bytes": 202,
+    "sha256": "9239900ca4c37dc860feb154216409f05d906e26f2d79550e1e8e8b8db6324c7"
+  },
+  {
+    "path": "ios/VersaQuickGame/Assets.xcassets/BrandMark.imageset/BrandMark.png",
+    "bytes": 213121,
+    "sha256": "b048e25f831a4627e97e76c7fa92561a99ea12f660ac33714671ec9277114b7f"
+  },
+  {
+    "path": "ios/VersaQuickGame/Assets.xcassets/BrandMark.imageset/Contents.json",
+    "bytes": 152,
+    "sha256": "94f376a33ed32bd452d32e7bcc5a3b3c1bb26331f6fa461c630a9b95c0ca92c4"
+  },
+  {
+    "path": "ios/VersaQuickGame/Assets.xcassets/Contents.json",
+    "bytes": 59,
+    "sha256": "a3393322cd7b4c1e0aa93bebe09abaa91ad891290d1225b0b5d10b5c6f216025"
+  },
+  {
+    "path": "ios/VersaQuickGame/Core/Models.swift",
+    "bytes": 8223,
+    "sha256": "34c7c9639f26c50ff8c9fe9b5357986f56df69d80646588330fef3a4e40490a5"
+  },
+  {
+    "path": "ios/VersaQuickGame/Info.plist",
+    "bytes": 1374,
+    "sha256": "a4dfa7dd0088217f90f1a73754373738f84bf0b8c969aa9108232a2ccba8e72e"
+  },
+  {
+    "path": "ios/VersaQuickGame/PrivacyInfo.xcprivacy",
+    "bytes": 2505,
+    "sha256": "dc04cadce018c8fe6140eda47059b40249f1ec71d8a3969d5e528550485fd7d0"
+  },
+  {
+    "path": "ios/VersaQuickGame/Services/AppStore.swift",
+    "bytes": 2335,
+    "sha256": "ecc3ae3af1df30adfc8d0710d9f0dbe5618e84945023998a13e744c55a2631cf"
+  },
+  {
+    "path": "ios/VersaQuickGame/Services/DemoGameService.swift",
+    "bytes": 11322,
+    "sha256": "79f63caa2a19fd0631992f60792938e7b76da1d4b4dbec6b7a9c75b97b3e8c67"
+  },
+  {
+    "path": "ios/VersaQuickGame/Services/GameService.swift",
+    "bytes": 1578,
+    "sha256": "09dba7a6144b30125444d2a9d6ea11d7bc28903925a660b6102a9bfccf51d71d"
+  },
+  {
+    "path": "ios/VersaQuickGame/Services/SupabaseGameService.swift",
+    "bytes": 7302,
+    "sha256": "62337b06823ceed88c4a6ac099363b31896b7ac48d14402a4deb7ba16aca8cc0"
+  },
+  {
+    "path": "ios/VersaQuickGame/VersaQuickGame.entitlements",
+    "bytes": 291,
+    "sha256": "f51ff6b690d2ccdb9f9ed67d54bc0d3d03e76950bfeda4ab2d807b2ebaa1c456"
+  },
+  {
+    "path": "ios/VersaQuickGame/VersaQuickGameApp.swift",
+    "bytes": 2024,
+    "sha256": "fe8386febd2f8749bb99c8d7e56a14b6eaa9c495611bd28de2913fada508af03"
+  },
+  {
+    "path": "ios/VersaQuickGame/Views/AccountViews.swift",
+    "bytes": 8013,
+    "sha256": "7d40b76343fb5d39c45977b82dac058ed447bb5fd584049a155ac257fbb94497"
+  },
+  {
+    "path": "ios/VersaQuickGame/Views/GameDetailView.swift",
+    "bytes": 9486,
+    "sha256": "2196474e9a18e14d125d1025f4a4f3d839d5c919b48db91d91b361c0ca4d41ca"
+  },
+  {
+    "path": "ios/VersaQuickGame/Views/GroupsView.swift",
+    "bytes": 4312,
+    "sha256": "d469e392cdcffb4162fe40707e815ded929010156f94d80960ac227ce7fb19b0"
+  },
+  {
+    "path": "ios/VersaQuickGame/Views/HistorySummaryViews.swift",
+    "bytes": 11894,
+    "sha256": "e73ac206b7e9d4f2e9e9376c914cf8874199aae592c337474798d78274aec0fd"
+  },
+  {
+    "path": "ios/VersaQuickGame/Views/InviteJoinView.swift",
+    "bytes": 4289,
+    "sha256": "046b9b0f3efc0a23ddd6576f3ec397dbf5ef5a2e2fd65b22fffeb72fa35abef3"
+  },
+  {
+    "path": "ios/VersaQuickGame/Views/PlayView.swift",
+    "bytes": 9091,
+    "sha256": "a104fd39581b7fb66825cfd35e003cdeccc4d2a29c5ba257c4aa9274257a9930"
+  },
+  {
+    "path": "ios/VersaQuickGame/Views/Theme.swift",
+    "bytes": 3603,
+    "sha256": "9a1fc12975e8426356b8f7409a164e64496e233535bd8cb6960b3fee2b9bcfd1"
+  },
+  {
+    "path": "ios/VersaQuickGame.xcodeproj/project.pbxproj",
+    "bytes": 9646,
+    "sha256": "51716743966ee617720aab7c4c0329cbb2870b52f4dae3b49fd3add659747a3a"
+  },
+  {
+    "path": "ios/VersaQuickGame.xcodeproj/xcshareddata/xcschemes/VersaQuickGame.xcscheme",
+    "bytes": 2071,
+    "sha256": "0e3c2fcaf9f3108026f6ed81e5790df81ad9a8270f64b17a4144c5985c2998f6"
+  },
+  {
+    "path": "package-lock.json",
+    "bytes": 43395,
+    "sha256": "1c4d6dc9ab80147302994425b0703fea30196371c7f9efb7134bc09b6373050a"
+  },
+  {
+    "path": "package.json",
+    "bytes": 510,
+    "sha256": "f50c70da01a4fe9031acb14b6793091fb68fb5e5b7bfb5bb23da4063c2d86bf8"
+  },
+  {
+    "path": "scripts/generate-xcode-project.py",
+    "bytes": 7485,
+    "sha256": "fc6f70439fbb5fe7436c41e760ab7c894ce38bcb85a594294cf5cdbd451f6c37"
+  },
+  {
+    "path": "web/.env.demo",
+    "bytes": 15,
+    "sha256": "2cfc26e27b75bbe17f531c18102e3259151b00fae455e264e1f9000affcd0f9f"
+  },
+  {
+    "path": "web/.env.example",
+    "bytes": 365,
+    "sha256": "a98458807016d14e718c030907f34d501d61f98f1b6745284ce013369997d084"
+  },
+  {
+    "path": "web/index.html",
+    "bytes": 770,
+    "sha256": "5f999f06b247ecb9b8f9994af9be5120ed50ade3fb986132481a688ecaa4dac4"
+  },
+  {
+    "path": "web/package.json",
+    "bytes": 531,
+    "sha256": "de3c88d17d577fc16ae03273a40746de6464c2df0dbb472ab5bb137805242b18"
+  },
+  {
+    "path": "web/public/.well-known/apple-app-site-association",
+    "bytes": 42,
+    "sha256": "0c642cf0a836d285f5a279502ea29b30646abe07952afa4a06d1a7c5cc3a15a4"
+  },
+  {
+    "path": "web/public/_headers",
+    "bytes": 601,
+    "sha256": "f8036c4f24b0ef4c6ba9791bc8be885a5f082b991c9281c5c4e2829847a61c0c"
+  },
+  {
+    "path": "web/public/icon-192.png",
+    "bytes": 31565,
+    "sha256": "702fe41d3c0e068f1d690a5869d347521f74f033f5c0c709bb5779bd41ba2d71"
+  },
+  {
+    "path": "web/public/icon-512.png",
+    "bytes": 213121,
+    "sha256": "b048e25f831a4627e97e76c7fa92561a99ea12f660ac33714671ec9277114b7f"
+  },
+  {
+    "path": "web/public/robots.txt",
+    "bytes": 26,
+    "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+  },
+  {
+    "path": "web/scripts/association.mjs",
+    "bytes": 1273,
+    "sha256": "e764cfae18d462fb84ffa8b935a083edca0a96b9b6849bed2c8aeaf90e6ee798"
+  },
+  {
+    "path": "web/src/api.ts",
+    "bytes": 2564,
+    "sha256": "0e0d73720e48f25c128497bbcda6f7e86e00bac024b530bdc1e621cd770039f5"
+  },
+  {
+    "path": "web/src/demo.ts",
+    "bytes": 2565,
+    "sha256": "806cff147061d4aad9afd3b35850013ad9ede039f1112e0204fd2e5311264ce9"
+  },
+  {
+    "path": "web/src/main.ts",
+    "bytes": 13559,
+    "sha256": "b360702ed5403400ab735152cc27b8e9a12bc31170b742a9d9ff6c1884d9e4ac"
+  },
+  {
+    "path": "web/src/style.css",
+    "bytes": 5487,
+    "sha256": "be491628118973fcd26adae25df8633d67b2e1a0a9f64ae86f5fff73ab899750"
+  },
+  {
+    "path": "web/src/types.ts",
+    "bytes": 1200,
+    "sha256": "ddb31e1d3d42ab5e3f5eff3b85244af65e0de7faafd69925e3588bb64c640d2c"
+  },
+  {
+    "path": "web/tests/invitation.test.mjs",
+    "bytes": 10862,
+    "sha256": "87ccb742ff6706b05c31722f6aef6b088cf8e48d925bcb5d862f9673fb392fc2"
+  },
+  {
+    "path": "web/tsconfig.json",
+    "bytes": 257,
+    "sha256": "e07b091dedb3d946d6092152e545ad140c7922054c8189f677f58169eb2608af"
+  }
+]

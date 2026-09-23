@@ -1,0 +1,8 @@
+// Copy Local.example.xcconfig to Local.xcconfig and fill in your own public project settings.
+SUPABASE_URL = https:/$()/YOUR_PROJECT.supabase.co
+SUPABASE_PUBLISHABLE_KEY = YOUR_SUPABASE_PUBLISHABLE_KEY
+INVITE_HOST = YOUR_PROJECT.pages.dev
+INVITE_BASE_URL = https:/$()/$(INVITE_HOST)
+DEVELOPMENT_TEAM =
+PRODUCT_BUNDLE_IDENTIFIER = com.versagaldigital.versaquickgame
+#include? "Local.xcconfig"

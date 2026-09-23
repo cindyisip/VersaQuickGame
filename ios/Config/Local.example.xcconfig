@@ -1,0 +1,8 @@
+// Xcode treats // as a comment. Keep /$()/ in HTTPS URLs in this file.
+SUPABASE_URL = https:/$()/YOUR_PROJECT.supabase.co
+SUPABASE_PUBLISHABLE_KEY = YOUR_SUPABASE_PUBLISHABLE_KEY
+INVITE_HOST = YOUR_PROJECT.pages.dev
+INVITE_BASE_URL = https:/$()/$(INVITE_HOST)
+DEVELOPMENT_TEAM = YOUR_APPLE_TEAM_ID
+// Optionally override the suggested bundle identifier after registering it with Apple.
+PRODUCT_BUNDLE_IDENTIFIER = com.versagaldigital.versaquickgame

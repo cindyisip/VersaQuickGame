@@ -1,0 +1,17 @@
+node_modules/
+web/dist/
+.env
+.env.local
+.env.*.local
+ios/Config/Local.xcconfig
+DerivedData/
+.DS_Store
+ios/.build/
+ios/.swiftpm/
+*.xcuserstate
+xcuserdata/
+*.p8
+*.p12
+*.mobileprovision
+test-results/
+playwright-report/

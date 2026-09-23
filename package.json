@@ -1,0 +1,20 @@
+{
+  "name": "versa-quick-game",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace web",
+    "dev:demo": "npm run dev:demo --workspace web",
+    "build": "npm run build --workspace web",
+    "test": "node --test backend/tests/*.test.mjs",
+    "check": "npm test && npm run build",
+    "test:browser": "node web/tests/invitation.test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8",
+    "playwright": "1.62.1"
+  }
+}
