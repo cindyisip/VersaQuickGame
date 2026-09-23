@@ -51,10 +51,18 @@ struct SharedGroupView: View {
                 Text(group.eligibility == "all_players" ? "All four players must be members" : "At least one member on each team")
                 if group.owner_id == store.userID { Picker("Game rule", selection: $group.eligibility) {
                     Text("One on each team").tag("one_each"); Text("All four players").tag("all_players")
-                }.onChange(of: group.eligibility) { _, rule in Task { do {
-                    let groups = try await store.service.setGroupRule(id: group.id, rule: rule)
-                    if let updated = groups.first(where: { $0.id == group.id }) { group = updated }; await refresh()
-                } catch { error = error.localizedDescription } } } }
+                }.onChange(of: group.eligibility) { _, rule in
+                    Task {
+                        do {
+                            let groups = try await store.service.setGroupRule(id: group.id, rule: rule)
+                            let updatedGroup = groups.first { candidate in candidate.id == group.id }
+                            if let updatedGroup { group = updatedGroup }
+                            await refresh()
+                        } catch let caughtError {
+                            self.error = caughtError.localizedDescription
+                        }
+                    }
+                } }
             }
             Section("Leaderboard") {
                 Picker("View", selection: $view) { Text("Players").tag("players"); Text("Partners").tag("partners") }.pickerStyle(.segmented)
@@ -69,8 +77,16 @@ struct SharedGroupView: View {
                 } else { ProgressView() }
             }
             Section("Qualifying games") {
+                // Keep each formatted value separate so Swift 5's type checker can compile this view reliably.
                 ForEach(board?.games ?? []) { game in
-                    HStack { Text((Dates.parse(game.starts_at) ?? .now).formatted(date: .abbreviated,time: .omitted)); Spacer(); Text("\(game.score_a) – \(game.score_b)") }
+                    let gameDate = Dates.parse(game.starts_at) ?? Date.now
+                    let dateText = gameDate.formatted(date: .abbreviated, time: .omitted)
+                    let scoreText = "\(game.score_a) – \(game.score_b)"
+                    HStack {
+                        Text(dateText)
+                        Spacer()
+                        Text(scoreText)
+                    }
                 }
             }
             Section("Members") { ForEach(group.members) { member in Text(member.name) } }
@@ -78,13 +94,20 @@ struct SharedGroupView: View {
                 Button("Copy invitation code") { Task { do {
                     inviteCode = try await store.service.groupInvite(id: group.id)
                     UIPasteboard.general.string = inviteCode
-                } catch { error = error.localizedDescription } } }
+                } catch let caughtError { error = caughtError.localizedDescription } } }
                 if inviteCode != nil { Text("Code copied. Send it to the player, who can enter it on the Groups screen after signing in.").font(.caption).foregroundStyle(.secondary) }
             }
             if let error { ErrorNotice(text: error) }
         }.navigationTitle(group.name).task { await refresh() }.onChange(of: view) { _, _ in Task { await refresh() } }.refreshable { await refresh() }
     }
-    private func refresh() async { do { board = try await store.service.groupBoard(id: group.id, view: view); error = nil } catch { error = error.localizedDescription } }
+    private func refresh() async {
+        do {
+            board = try await store.service.groupBoard(id: group.id, view: view)
+            error = nil
+        } catch let caughtError {
+            self.error = caughtError.localizedDescription
+        }
+    }
 }
 struct GroupEditorRoute: Identifiable { let id = UUID(); var group: PlayerGroup? }
 struct GroupEditorView: View {
@@ -114,5 +137,14 @@ struct GroupEditorView: View {
             ToolbarItem(placement: .confirmationAction) { Button("Save") { Task { await run { store.data = try await store.service.saveGroup(id: group?.id, name: name, members: Array(members)); dismiss() } } }.disabled(name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || busy) }
         }.onAppear { name = group?.name ?? ""; members = Set(group?.member_ids ?? []) }
     }
-    @MainActor private func run(_ work: () async throws -> Void) async { busy = true; error = nil; defer { busy = false }; do { try await work() } catch { self.error = error.localizedDescription } }
+    @MainActor private func run(_ work: () async throws -> Void) async {
+        busy = true
+        error = nil
+        defer { busy = false }
+        do {
+            try await work()
+        } catch let caughtError {
+            self.error = caughtError.localizedDescription
+        }
+    }
 }

@@ -1,0 +1,244 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project ios/VersaQuickGame.xcodeproj -scheme VersaQuickGame -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphonesimulator27.0
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  swift-http-types: https://github.com/apple/swift-http-types.git @ 1.8.0
+  swift-clocks: https://github.com/pointfreeco/swift-clocks @ 1.1.1
+  swift-crypto: https://github.com/apple/swift-crypto.git @ 4.5.2
+  swift-asn1: https://github.com/apple/swift-asn1.git @ 1.7.3
+  swift-concurrency-extras: https://github.com/pointfreeco/swift-concurrency-extras @ 1.4.1
+  xctest-dynamic-overlay: https://github.com/pointfreeco/xctest-dynamic-overlay @ 1.13.1
+  Supabase: https://github.com/supabase/supabase-swift.git @ 2.55.2
+  swift-issue-reporting: https://github.com/pointfreeco/swift-issue-reporting @ 2.1.1
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+{ platform:iOS Simulator, arch:arm64, id:C582BCEA-BAFE-4971-B9F7-E3ADCE744C17, OS:27.0, name:iPad (A16) }
+{ platform:iOS Simulator, arch:arm64, id:87F8E418-1D63-42F9-90B1-CBA2EECE4A9E, OS:27.0, name:iPad Air 11-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:0BD13D69-FF07-4A6E-BC23-7F244F27FEDF, OS:27.0, name:iPad Air 13-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:E411FD0A-A981-40FB-9776-57E303A204BC, OS:27.0, name:iPad Pro 11-inch (M5) }
+{ platform:iOS Simulator, arch:arm64, id:6AEF2B25-CA4C-4AD7-8434-548744225227, OS:27.0, name:iPad Pro 13-inch (M5) }
+{ platform:iOS Simulator, arch:arm64, id:A116751F-E702-477F-A1CD-DD787A321616, OS:27.0, name:iPad mini (A17 Pro) }
+{ platform:iOS Simulator, arch:arm64, id:7E05C453-9C2A-4A89-BEDE-FF8854825C67, OS:27.0, name:iPhone 17 }
+{ platform:iOS Simulator, arch:arm64, id:9135F034-A489-4E66-BC8A-4E810DE9172C, OS:27.0, name:iPhone 17e }
+{ platform:iOS Simulator, arch:arm64, id:BB053CED-D714-4D9A-8528-0E3352C87D9D, OS:27.0, name:iPhone 18 Pro }
+{ platform:iOS Simulator, arch:arm64, id:4754BC51-D07D-4462-962B-F3DEFD0736AB, OS:27.0, name:iPhone 18 Pro Max }
+{ platform:iOS Simulator, arch:arm64, id:414EC09C-32A3-4296-8729-BAB61A6FCAE5, OS:27.0, name:iPhone Air }
+{ platform:macOS, arch:arm64, variant:Designed for [iPad,iPhone], id:00008103-0019105402E2001E, name:My Mac }
+{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }
+{ platform:iOS, arch:arm64, id:00008150-0016102C1182401C, name:CindysPhone }
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (25 targets)
+    Target 'VersaQuickGame' in project 'VersaQuickGame'
+        ➜ Explicit dependency on target 'Supabase-product' in project 'Supabase'
+    Target 'Supabase-product' in project 'Supabase'
+        ➜ Explicit dependency on target 'Supabase' in project 'Supabase'
+        ➜ Explicit dependency on target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'Auth' in project 'Supabase'
+        ➜ Explicit dependency on target 'Functions' in project 'Supabase'
+        ➜ Explicit dependency on target 'PostgREST' in project 'Supabase'
+        ➜ Explicit dependency on target 'RealtimeV2' in project 'Supabase'
+        ➜ Explicit dependency on target 'Realtime' in project 'Supabase'
+        ➜ Explicit dependency on target 'Storage' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'Crypto-product' in project 'swift-crypto'
+    Target 'Supabase' in project 'Supabase'
+        ➜ Explicit dependency on target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'Auth' in project 'Supabase'
+        ➜ Explicit dependency on target 'Functions' in project 'Supabase'
+        ➜ Explicit dependency on target 'PostgREST' in project 'Supabase'
+        ➜ Explicit dependency on target 'RealtimeV2' in project 'Supabase'
+        ➜ Explicit dependency on target 'Realtime' in project 'Supabase'
+        ➜ Explicit dependency on target 'Storage' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'Crypto-product' in project 'swift-crypto'
+    Target 'Storage' in project 'Supabase'
+        ➜ Explicit dependency on target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+    Target 'Realtime' in project 'Supabase'
+        ➜ Explicit dependency on target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'RealtimeV2' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+    Target 'RealtimeV2' in project 'Supabase'
+        ➜ Explicit dependency on target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+    Target 'PostgREST' in project 'Supabase'
+        ➜ Explicit dependency on target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+    Target 'Functions' in project 'Supabase'
+        ➜ Explicit dependency on target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+    Target 'Auth' in project 'Supabase'
+        ➜ Explicit dependency on target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'Crypto-product' in project 'swift-crypto'
+    Target 'Crypto-product' in project 'swift-crypto'
+        ➜ Explicit dependency on target 'Crypto' in project 'swift-crypto'
+        ➜ Explicit dependency on target 'swift-crypto_Crypto' in project 'swift-crypto'
+    Target 'Crypto' in project 'swift-crypto'
+        ➜ Explicit dependency on target 'swift-crypto_Crypto' in project 'swift-crypto'
+    Target 'swift-crypto_Crypto' in project 'swift-crypto' (no dependencies)
+    Target 'Helpers' in project 'Supabase'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+    Target 'IssueReporting-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target '_IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'swift-issue-reporting'
+    Target 'XCTestDynamicOverlay-product' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target '_IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'swift-issue-reporting'
+    Target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target '_IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'swift-issue-reporting'
+    Target '_IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'swift-issue-reporting'
+    Target 'Clocks-product' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'Clocks' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'swift-issue-reporting'
+    Target 'Clocks' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'IssueReporting-product' in project 'swift-issue-reporting'
+    Target 'IssueReporting-product' in project 'swift-issue-reporting'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'swift-issue-reporting'
+    Target 'IssueReporting' in project 'swift-issue-reporting' (no dependencies)
+    Target 'HTTPTypes-product' in project 'swift-http-types'
+        ➜ Explicit dependency on target 'HTTPTypes' in project 'swift-http-types'
+    Target 'HTTPTypes' in project 'swift-http-types' (no dependencies)
+    Target 'ConcurrencyExtras-product' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+    Target 'ConcurrencyExtras' in project 'swift-concurrency-extras' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache
+    cd /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -o /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache
+
+SwiftDriver VersaQuickGame normal arm64 com.apple.xcode.tools.swift.compiler (in target 'VersaQuickGame' from project 'VersaQuickGame')
+    cd /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name VersaQuickGame -Onone @/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/arm64/VersaQuickGame.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Index.noindex/DataStore -swift-version 5 -I /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator -F /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache -output-file-map /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/arm64/VersaQuickGame-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/arm64/VersaQuickGame.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/arm64/VersaQuickGame-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/arm64/VersaQuickGame_const_extract_protocols.json -Xcc -iquote -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-generated-files.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-own-target-headers.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame-296ea469611ec51aecc926f36812f57a-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-project-headers.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources-normal/arm64 -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources/arm64 -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/arm64/VersaQuickGame-Swift.h -working-directory /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver VersaQuickGame normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'VersaQuickGame' from project 'VersaQuickGame')
+    cd /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name VersaQuickGame -Onone @/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Index.noindex/DataStore -swift-version 5 -I /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator -F /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache -output-file-map /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame_const_extract_protocols.json -Xcc -iquote -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-generated-files.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-own-target-headers.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame-296ea469611ec51aecc926f36812f57a-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-project-headers.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources-normal/x86_64 -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources/x86_64 -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame-Swift.h -working-directory /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ VersaQuickGame (in target 'VersaQuickGame' from project 'VersaQuickGame')
+
+SwiftCompile normal x86_64 (in target 'VersaQuickGame' from project 'VersaQuickGame')
+    cd /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ VersaQuickGame (in target 'VersaQuickGame' from project 'VersaQuickGame')
+
+SwiftCompile normal arm64 (in target 'VersaQuickGame' from project 'VersaQuickGame')
+    cd /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios
+    
+
+SwiftCompile normal arm64 Compiling\ GroupsView.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift (in target 'VersaQuickGame' from project 'VersaQuickGame')
+
+SwiftCompile normal arm64 /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift (in target 'VersaQuickGame' from project 'VersaQuickGame')
+    cd /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios
+    builtin-SwiftPerFileCompile GroupsView.swift
+
+SwiftCompile normal x86_64 Compiling\ GroupsView.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift (in target 'VersaQuickGame' from project 'VersaQuickGame')
+/Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift:56:24: error: the compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions
+ 54 |                 }.onChange(of: group.eligibility) { _, rule in Task { do {
+ 55 |                     let groups = try await store.service.setGroupRule(id: group.id, rule: rule)
+ 56 |                     if let updated = groups.first(where: { $0.id == group.id }) { group = updated }; await refresh()
+    |                        `- error: the compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions
+ 57 |                 } catch { error = error.localizedDescription } } } }
+ 58 |             }
+
+/Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift:87:133: error: cannot assign to value: 'error' is immutable
+ 85 |         }.navigationTitle(group.name).task { await refresh() }.onChange(of: view) { _, _ in Task { await refresh() } }.refreshable { await refresh() }
+ 86 |     }
+ 87 |     private func refresh() async { do { board = try await store.service.groupBoard(id: group.id, view: view); error = nil } catch { error = error.localizedDescription } }
+    |                                                                                                                                     `- error: cannot assign to value: 'error' is immutable
+ 88 | }
+ 89 | struct GroupEditorRoute: Identifiable { let id = UUID(); var group: PlayerGroup? }
+
+/Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift:87:147: error: cannot assign value of type 'String' to type 'any Error'
+ 85 |         }.navigationTitle(group.name).task { await refresh() }.onChange(of: view) { _, _ in Task { await refresh() } }.refreshable { await refresh() }
+ 86 |     }
+ 87 |     private func refresh() async { do { board = try await store.service.groupBoard(id: group.id, view: view); error = nil } catch { error = error.localizedDescription } }
+    |                                                                                                                                                   `- error: cannot assign value of type 'String' to type 'any Error'
+ 88 | }
+ 89 | struct GroupEditorRoute: Identifiable { let id = UUID(); var group: PlayerGroup? }
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Core/Models.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Services/AppStore.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Services/DemoGameService.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Services/GameService.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Services/SupabaseGameService.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/VersaQuickGameApp.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/AccountViews.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GameDetailView.swift -primary-file /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/HistorySummaryViews.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/InviteJoinView.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/PlayView.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/Theme.swift /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources/GeneratedAssetSymbols.swift -emit-dependencies-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/GroupsView.d -emit-const-values-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/GroupsView.swiftconstvalues -emit-reference-dependencies-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/GroupsView.swiftdeps -serialize-diagnostics-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/GroupsView.dia -emit-localized-strings -emit-localized-strings-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64 -target x86_64-apple-ios17.0-simulator -module-can-import-version DeveloperToolsSupport 24.0.24 24.0.24 -disable-cross-import-overlay-search -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame-dependencies-1.json -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.0.sdk -I /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator -F /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator -module-cache-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -no-color-diagnostics -Xcc -fno-color-diagnostics -g -debug-info-format\=dwarf -dwarf-version\=4 -swift-version 5 -Onone -D DEBUG -serialize-debugging-options -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios -enable-anonymous-context-mangled-names -file-compilation-dir /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios -Xcc -ivfsstatcache -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator27.0-24A430-8dc58220667be655e1bcc261a7455254.sdkstatcache -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -Xcc -iquote -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-generated-files.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-own-target-headers.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame-296ea469611ec51aecc926f36812f57a-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/VersaQuickGame-project-headers.hmap -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources-normal/x86_64 -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources/x86_64 -Xcc -I/Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/DerivedSources -no-auto-bridging-header-chaining -module-name VersaQuickGame -const-gather-protocols-file /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame_const_extract_protocols.json -disable-clang-spi -clang-target x86_64-apple-ios27.0-simulator -target-sdk-version 27.0 -target-sdk-name iphonesimulator27.0 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -o /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/GroupsView.o -debug-module-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/VersaQuickGame.swiftmodule -index-unit-output-path /VersaQuickGame.build/Debug-iphonesimulator/VersaQuickGame.build/Objects-normal/x86_64/GroupsView.o -index-store-path /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Index.noindex/DataStore -index-system-modules
+
+SwiftCompile normal x86_64 /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift (in target 'VersaQuickGame' from project 'VersaQuickGame')
+    cd /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios
+    builtin-SwiftPerFileCompile GroupsView.swift
+
+PruneExplicitPrecompiledModules /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/cynthiaisip/Library/Developer/Xcode/DerivedData/VersaQuickGame-evkyhgymmvbmwpbzqvjygxqngqxp/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal x86_64 Compiling\ GroupsView.swift /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift (in target 'VersaQuickGame' from project 'VersaQuickGame')
+	SwiftCompile normal x86_64 /Users/cynthiaisip/Documents/VersaGalDigital/VersaQuickGame/ios/VersaQuickGame/Views/GroupsView.swift (in target 'VersaQuickGame' from project 'VersaQuickGame')
+	Building project VersaQuickGame with scheme VersaQuickGame and configuration Debug
+(3 failures)
